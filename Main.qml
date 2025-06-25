@@ -82,7 +82,7 @@ Rectangle {
                     id: clockLabel
                     color: generalFontColor
                     font.pointSize: root.generalFontSize
-                    font.capitalize: Font.Capitalize
+                    font.capitalization: Font.Capitalize
                     renderType: Text.QtRendering
                     function updateTime() {
                         text = new Date().toLocaleString(Qt.locale("fr_FR"), "dddd dd MMMM,  hh:mm")
