@@ -84,7 +84,7 @@ Rectangle {
                     font.pointSize: root.generalFontSize
                     renderType: Text.QtRendering
                     function updateTime() {
-                        text = new Date().toLocaleString(Qt.locale("fr_FR"), "ddd dd MMMM,  hh:mm A")
+                        text = new Date().toLocaleString(Qt.locale("fr_FR"), "dddd dd MMMM,  hh:mm")
                     }
                 }
                 Timer {
