@@ -82,6 +82,7 @@ Rectangle {
                     id: clockLabel
                     color: generalFontColor
                     font.pointSize: root.generalFontSize
+                    font.capitalize: Font.Capitalize
                     renderType: Text.QtRendering
                     function updateTime() {
                         text = new Date().toLocaleString(Qt.locale("fr_FR"), "dddd dd MMMM,  hh:mm")
@@ -136,7 +137,7 @@ Rectangle {
                 actionItems: [
                     ActionButton {
                         iconSource: "assets/suspend.svgz"
-                        text: config.translationSuspend ? config.translationSuspend : "Suspend"
+                        text: "Veille"
                         onClicked: sddm.suspend()
                         enabled: sddm.canSuspend
                         iconSize: root.generalFontSize * 3
